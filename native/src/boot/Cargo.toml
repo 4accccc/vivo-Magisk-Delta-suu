@@ -1,0 +1,18 @@
+[package]
+name = "magiskboot"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+path = "lib.rs"
+
+[build-dependencies]
+protobuf-codegen = "3.2.0"
+cxx-gen = { path = "../external/cxx-rs/gen/lib" }
+
+[dependencies]
+base = { path = "../base" }
+cxx = { path = "../external/cxx-rs" }
+protobuf = "3.2.0"
+byteorder = "1"
