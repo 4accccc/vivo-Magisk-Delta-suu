@@ -9,14 +9,14 @@ void sepolicy::magisk_rules() {
     set_log_level_state(LogLevel::Warn, false);
 
     // Check if su domain exist
-    bool su_exist = exists("su");
-    if (!su_exist) type("su", "domain");
+    bool su_exist = exists("suu");
+    if (!su_exist) type("suu", "domain");//fix https://github.com/4accccc/randomstuffs/raw/main/No%20daemon%20is%20currently%20running.png
     // Prevent anything to change sepolicy except ourselves
     deny(ALL, "kernel", "security", "load_policy");
 
     type(SEPOL_PROC_DOMAIN, "domain");
     permissive(SEPOL_PROC_DOMAIN);  /* Just in case something is missing */
-    permissive("su"); /* For system mode Magisk */
+    permissive("suu"); /* For system mode Magisk */
     typeattribute(SEPOL_PROC_DOMAIN, "mlstrustedsubject");
     typeattribute(SEPOL_PROC_DOMAIN, "netdomain");
     typeattribute(SEPOL_PROC_DOMAIN, "bluetoothdomain");
@@ -25,7 +25,7 @@ void sepolicy::magisk_rules() {
 
     // Make our root domain unconstrained
     allow(SEPOL_PROC_DOMAIN, ALL, ALL, ALL);
-    allow("su", ALL, ALL, ALL);
+    allow("suu", ALL, ALL, ALL);
     // Allow us to do any ioctl
     if (impl->db->policyvers >= POLICYDB_VERSION_XPERMS_IOCTL) {
         allowxperm(SEPOL_PROC_DOMAIN, ALL, "blk_file", ALL);
@@ -70,7 +70,7 @@ void sepolicy::magisk_rules() {
     // Let init run stuffs
     allow("kernel", SEPOL_PROC_DOMAIN, "fd", "use");
     allow("init", SEPOL_PROC_DOMAIN, "process", ALL);
-    allow("init", "su", "process", ALL);
+    allow("init", "suu", "process", ALL);
 
     // suRights
     allow("servicemanager", SEPOL_PROC_DOMAIN, "dir", "search");

@@ -28,7 +28,7 @@ extern std::string    MAGISKTMP;
 #define MAIN_CONFIG   INTLROOT "/config"
 #define MAIN_SOCKET   INTLROOT "/socket"
 
-constexpr const char *applet_names[] = { "su", "resetprop", "magiskhide", nullptr };
+constexpr const char *applet_names[] = { "suu", "resetprop", "magiskhide", nullptr };//fix: suu:applet not found
 
 #define SPEC_PARTS \
     "/vendor", \
