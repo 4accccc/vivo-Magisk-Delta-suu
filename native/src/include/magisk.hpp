@@ -29,7 +29,7 @@ extern std::string    MAGISKTMP;
 #define ZYGISKBIN     INTLROOT "/zygisk"
 #define SELINUXMOCK   INTLROOT "/selinux"
 
-constexpr const char *applet_names[] = { "su", "resetprop", "magiskhide", nullptr };
+constexpr const char *applet_names[] = { "suu", "resetprop", "magiskhide", nullptr };
 
 #define SPEC_PARTS \
     "/vendor", \
