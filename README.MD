@@ -50,7 +50,8 @@ THE OFFICAL MAGISK DOESNT HAVE A SUU VERSION SO PLZ STOP!
 - Magisk builds on any OS Android Studio supports. Install Android Studio and git, then do the initial setups.
 - Clone sources: `git clone --recurse-submodules https://github.com/4accccc/vivo-Magisk-Delta-suu.git`
 - Install Python 3.8+ \
-  (Windows only: select **'Add Python to PATH'** in installer) (Optional on Windows)run `pip install colorama` after install
+  (Windows only: select **'Add Python to PATH'** in installer) \
+  (Optional on Windows)run `pip install colorama` after install
 - Configure to use the JDK bundled in Android Studio:
   - macOS: `export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"`
   - Linux: `export PATH="/path/to/androidstudio/jre/bin:$PATH"`

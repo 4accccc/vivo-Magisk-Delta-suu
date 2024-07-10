@@ -38,7 +38,8 @@ Magisk 是由一系列开源应用组成的用来自定义安卓的应用，支�
 - 首先安装Android Studio以及git
 - 打开cmd输入`git clone --recurse-submodules https://github.com/4accccc/vivo-Magisk-Delta-suu.git`
 - 安装 Python 版本3.8+ \
-  (Windows 用户: 选中 **'Add Python to PATH'**) (Windows可选)安装完成后命令行输入`pip install colorama`
+  (Windows 用户: 选中 **'Add Python to PATH'**) \
+  (Windows 可选)安装完成后命令行输入`pip install colorama`
 - 调整系统设置使程序能够使用Android Studio自带的JDK:
   - macOS: `export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"`
   - Linux: `export PATH="/path/to/androidstudio/jre/bin:$PATH"`
