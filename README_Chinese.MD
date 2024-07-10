@@ -51,7 +51,7 @@ Magisk 是由一系列开源应用组成的用来自定义安卓的应用，支�
 ## Signing and Distribution & 签名以及分发
 
 - 用来签名 Magisk 应用的证书也会被直接内嵌于一些可执行文件中。在发行版(release)中，Magisk 的 root 守护进程(daemon)将强制检查应用数字证书并且会卸载任何签名不符的Magisk软件以使用户远离恶意以及未经认证的 Magisk 应用。
-- 若你想对 Magisk 本身作任何开发，请使用 **官方的debug版并且重新安装 Magisk ** 以绕过签名检查
+- 若你想对 Magisk 本身作任何开发，请使用 **官方的debug版并且重新安装 Magisk** 以绕过签名检查
 - 如果你想分发使用你自己签名证书的Magisk应用，请在配置文件`config.prop`中设置你的签名
 - 请阅 [谷歌官方开发者文档](https://developer.android.com/studio/publish/app-signing.html#generate-key) 以获取更多关于生成你自己的签名的详情
 
