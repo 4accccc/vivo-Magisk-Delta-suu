@@ -47,19 +47,16 @@ THE OFFICAL MAGISK DOESNT HAVE A SUU VERSION SO PLZ STOP!
 
 ## Building and Development
 
-- Magisk builds on any OS Android Studio supports. Install Android Studio and do the initial setups. \
-  (Windows only: **Enable developer mode**. This is required because we need symbolic link support.)
-- Install Git:
-  On Unix, install git with your favorite package manager \
-  On Windows, download the install the latest Git version on the official website.Make sure to **“Enable symbolic links”** during installation.
-- Clone sources: `git clone --recurse-submodules https://github.com/4accccc/vivo-Magisk-suu.git`
+- Magisk builds on any OS Android Studio supports. Install Android Studio and git, then do the initial setups.
+- Clone sources: `git clone --recurse-submodules https://github.com/4accccc/vivo-Magisk-Delta-suu.git`
 - Install Python 3.8+ \
-  (Windows only: select **'Add Python to PATH'** in installer.) \
-  (Optional on Windows): Run **pip install colorama** to install the colorama python package.
-- Configure to use the JDK bundled in Android Studio: \
-  The recommended option is to set environment variable **ANDROID_STUDIO** to the path where your Android Studio is installed. The build script will automatically find and use the bundled JDK. \
-  You can also setup JDK 17 yourself, but this guide will not cover the instructions.
-- Set environment variable **ANDROID_HOME** to the Android SDK folder. This path can be found in Android Studio settings.
+  (Windows only: select **'Add Python to PATH'** in installer) \
+  (Optional on Windows)run `pip install colorama` after install
+- Configure to use the JDK bundled in Android Studio:
+  - macOS: `export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"`
+  - Linux: `export PATH="/path/to/androidstudio/jre/bin:$PATH"`
+  - Windows: Add `C:\Path\To\Android Studio\jre\bin` to environment variable `PATH`
+- Set environment variable `ANDROID_SDK_ROOT` to the Android SDK folder (can be found in Android Studio settings)
 - Run `./build.py ndk` to let the script download and install NDK for you
 - To start building, run `build.py -r all`
 - To start development, open the project with Android Studio. The IDE can be used for both app (Kotlin/Java) and native sources.
