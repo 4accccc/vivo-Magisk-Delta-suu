@@ -1,5 +1,5 @@
 ## DELTA IS DEAD
-## DELTA CAME ALIVE![repo](https://github.com/1q23lyc45/KitsuneMagisk)
+## DELTA CAME ALIVE!!!  [repo](https://github.com/1q23lyc45/KitsuneMagisk)
 [Magisk Delta 26.1 Testing phrase 4(26105) source code](https://github.com/HuskyDG/Magisk/tree/cd3e76848421ffd112ce01dd1beb8e6b9c921a66)
 
 [中文用户往这里看过来](https://github.com/4accccc/vivo-Magisk-Delta-suu/blob/master/README_Chinese.MD)
